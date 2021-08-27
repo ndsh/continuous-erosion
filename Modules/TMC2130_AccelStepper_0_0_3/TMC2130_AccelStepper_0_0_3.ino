@@ -15,8 +15,8 @@
 #include <ESP8266WiFi.h>
 #include "./functions.h"
 
-#define disable 0
-#define enable  1
+//#define disable 0
+//#define enable  1
 unsigned int channel = 1;
 
 #define RESET 0
@@ -97,6 +97,7 @@ void loop() {
       stepper.enableOutputs();
       buttonState1 = digitalRead(BUTTON1);
       if(buttonState1 == 0) {
+        stepper.move(steps);
         stepper.run();
       } else {
         Serial.println(":: CALIBRATING");
@@ -110,6 +111,7 @@ void loop() {
       // count "steps"
       buttonState2 = digitalRead(BUTTON2);
       if(buttonState2 == 0) {
+        stepper.move(steps);
         stepper.run();
         stepCounter++;
       } else {
