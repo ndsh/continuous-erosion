@@ -19,7 +19,7 @@ The controller will only come down, once signals and noise around it vanish into
 
 ––––––––––
 
-(1) Based on the code „ESP8266 mini-sniff“ by Ray Burnette http://www.hackster.io/rayburne/projects
+(1) Based on the code „ESP8266 mini-sniff“ by Ray Burnette <a href="http://www.hackster.io/rayburne/projects">(link)</a>
 
 <img src="https://www.julian-h.de/wp-content/uploads/2019/11/IMG_9335_b.jpg">
 <img src="https://www.julian-h.de/wp-content/uploads/2019/11/IMG_9430_b.jpg">
@@ -31,6 +31,7 @@ The controller will only come down, once signals and noise around it vanish into
 Before this project was published there was no "good" wiring diagram for Arduino and the TMC2103 stepper motor driver.
 <img src="TMC2130-01.png">
 
-# Exhibited at
-
-* 
+# Exhibited
+* 2021 – ‚Continuous Erosion‘ + ‚ASCII Animations – Splitflapesque‘, Ortstermin: Art festival in Moabit and Hansaviertel, Berlin. Germany with *Projektraum für analoge und digitale Experimente*: Thomas Brandstätter, Erik Freydank, Hojin Kang, Arnaud Korenke
+* 2018 – ‚Continuous Erosion‘, (Un)natural encounters (Group Exhibition together with Irena Kukric, Bojana Petkovic, Mariana Schetini Basso, Luiz Zanotello), Galerie Herold, Bremen, Germany
+* 2017 – ‚Viserosion‘, (Un)natural encounters (Group Exhibition together with Irena Kukric, Bojana Petkovic, Mariana Schetini Basso, Luiz Zanotello), Galeriji Doma kulture Studentski grad, Belgrade Serbia
