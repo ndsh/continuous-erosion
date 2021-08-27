@@ -21,10 +21,6 @@ The controller will only come down, once signals and noise around it vanish into
 
 (1) Based on the code „ESP8266 mini-sniff“ by Ray Burnette <a href="http://www.hackster.io/rayburne/projects">(link)</a>
 
-<img src="https://www.julian-h.de/wp-content/uploads/2019/11/IMG_9335_b.jpg">
-<img src="https://www.julian-h.de/wp-content/uploads/2019/11/IMG_9430_b.jpg">
-<img src="https://www.julian-h.de/wp-content/uploads/2019/11/IMG_9324_bb.jpg">
-
 
 
 # TMC2103 Motor driver
