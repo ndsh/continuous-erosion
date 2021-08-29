@@ -49,6 +49,9 @@ unsigned long interval;
 unsigned long grindTime = 120000;
 unsigned long pauseTime = 30000;
 
+unsigned long lastButtonTimestamp = 0;
+unsigned long maxInterval = 10000;
+
 // Objects
 TMC2130Stepper driver = TMC2130Stepper(EN_PIN, DIR_PIN, STEP_PIN, CS_PIN);
 AccelStepper stepper = AccelStepper(stepper.DRIVER, STEP_PIN, DIR_PIN);

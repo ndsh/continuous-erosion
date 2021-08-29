@@ -73,12 +73,24 @@ void stateMachine() {
       // hoher wert, langsamere bewegung
       buttonState1 = digitalRead(BUTTON1);
       buttonState2 = digitalRead(BUTTON2);
+      
       if(buttonState1 == 1) {
         changeDirection(true);
+        dir = true;
+        lastButtonTimestamp = millis();
+        
       } else if(buttonState2 == 1) {
         changeDirection(false);
+        dir = false;
+        lastButtonTimestamp = millis();
       }
 
+      if(millis() - lastButtonTimestamp > maxInterval) {
+        dir = !dir;
+       // changeDirection(dir);
+        lastButtonTimestamp = millis();
+      }
+      
       //stepper.disableOutputs();
       //stepper.moveTo(steps);
       //stepper.enableOutputs();
@@ -102,7 +114,7 @@ void stateMachine() {
         steps_per_mm = map(calcRSSI, 0, 80, 10000, 1);
         steps = 500*steps_per_mm;
         timestamp = millis();
-        state = CENTER;
+        state = SCAN;
        // stepper.setSpeed(500*steps_per_mm); // 100mm/s @ 80 steps/mm
         //stepper.setAcceleration(1000*steps_per_mm); // 2000mm/s^2
         //dir = !dir;
@@ -110,7 +122,7 @@ void stateMachine() {
         channel = 1;
         stepper.move(steps);
         //devices 
-  ä    }
+       }
       
     break;
 
